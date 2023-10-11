@@ -1,0 +1,2 @@
+function add: Shock, cancell
+products = equity, derivative, borrow/lending with restriction
