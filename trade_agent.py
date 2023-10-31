@@ -5,7 +5,6 @@ from price_simulate import price_simulate
 import optimal_MM
 import yaml
 
-
 class Agent:
     """
     Price API, receive trade, update portfolio
