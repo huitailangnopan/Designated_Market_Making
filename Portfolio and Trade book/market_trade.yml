@@ -1,0 +1,5001 @@
+IBM:
+  1:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  2:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 136.29
+    bid1_quantity: 1
+  3:
+    ask1_price: 147.52
+    ask1_quantity: 1
+    bid1_price: 136.29
+    bid1_quantity: 1
+  4:
+    ask1_price: 147.52
+    ask1_quantity: 1
+    bid1_price: 136.29
+    bid1_quantity: 2
+  5:
+    ask1_price: 146.24
+    ask1_quantity: 1
+    bid1_price: 136.29
+    bid1_quantity: 2
+  6:
+    ask1_price: 141.79
+    ask1_quantity: 2
+    bid1_price: 136.29
+    bid1_quantity: 2
+  7:
+    ask1_price: 141.79
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  8:
+    ask1_price: 141.79
+    ask1_quantity: 2
+    bid1_price: 141.31
+    bid1_quantity: 1
+  9:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 115.2
+    bid1_quantity: 3
+  10:
+    ask1_price: 155.0
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  11:
+    ask1_price: 155.0
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  12:
+    ask1_price: 153.0
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  13:
+    ask1_price: 153.0
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  14:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  15:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  16:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.92
+    bid1_quantity: 4
+  17:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.26
+    bid1_quantity: 1
+  18:
+    ask1_price: 142.38
+    ask1_quantity: 1
+    bid1_price: 141.26
+    bid1_quantity: 1
+  19:
+    ask1_price: 142.38
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  20:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.92
+    bid1_quantity: 4
+  21:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 31
+  22:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 5
+  23:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 4
+  24:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  25:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  26:
+    ask1_price: 141.79
+    ask1_quantity: 2
+    bid1_price: 141.29
+    bid1_quantity: 1
+  27:
+    ask1_price: 141.79
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  28:
+    ask1_price: 142.3
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  29:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  30:
+    ask1_price: 142.23
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  31:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  32:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  33:
+    ask1_price: 142.23
+    ask1_quantity: 1
+    bid1_price: 140.89
+    bid1_quantity: 1
+  34:
+    ask1_price: 142.23
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  35:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  36:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 140.88
+    bid1_quantity: 1
+  37:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 140.88
+    bid1_quantity: 1
+  38:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  39:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  40:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.12
+    bid1_quantity: 1
+  41:
+    ask1_price: 142.01
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  42:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  43:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  44:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  45:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  46:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  47:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  48:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  49:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  50:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  51:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  52:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  53:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  54:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  55:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  56:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  57:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  58:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  59:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  60:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  61:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  62:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  63:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  64:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  65:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  66:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  67:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  68:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  69:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  70:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  71:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  72:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  73:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  74:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  75:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  76:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.12
+    bid1_quantity: 1
+  77:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  78:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  79:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  80:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  81:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  82:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  83:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  84:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  85:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  86:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  87:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  88:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  89:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  90:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  91:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  92:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  93:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  94:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  95:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  96:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  97:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  98:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  99:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  100:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  101:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  102:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  103:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  104:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  105:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  106:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  107:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  108:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  109:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  110:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  111:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  112:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  113:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  114:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  115:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  116:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  117:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  118:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  119:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  120:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  121:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  122:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  123:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  124:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  125:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  126:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  127:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  128:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  129:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  130:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  131:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  132:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  133:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  134:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  135:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  136:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  137:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  138:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  139:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  140:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  141:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  142:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  143:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  144:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  145:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  146:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  147:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  148:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  149:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  150:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  151:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  152:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  153:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  154:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  155:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  156:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  157:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  158:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  159:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  160:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  161:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  162:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  163:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  164:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  165:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  166:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  167:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  168:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  169:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  170:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  171:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  172:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  173:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  174:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  175:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  176:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  177:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  178:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  179:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  180:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  181:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  182:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  183:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  184:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  185:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  186:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  187:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  188:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  189:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  190:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  191:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  192:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  193:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  194:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  195:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  196:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  197:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.12
+    bid1_quantity: 1
+  198:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  199:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  200:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  201:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  202:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  203:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  204:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  205:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  206:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  207:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  208:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  209:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  210:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  211:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  212:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  213:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  214:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  215:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  216:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  217:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  218:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  219:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  220:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  221:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  222:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  223:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  224:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  225:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  226:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  227:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  228:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  229:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  230:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  231:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  232:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  233:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  234:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  235:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  236:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  237:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  238:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  239:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  240:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  241:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  242:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  243:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  244:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  245:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  246:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  247:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  248:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  249:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  250:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  251:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  252:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  253:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  254:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  255:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  256:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  257:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  258:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  259:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  260:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  261:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  262:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  263:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  264:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  265:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.12
+    bid1_quantity: 1
+  266:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  267:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  268:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  269:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  270:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  271:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.36
+    bid1_quantity: 1
+  272:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  273:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  274:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  275:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  276:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.12
+    bid1_quantity: 1
+  277:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  278:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  279:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  280:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  281:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  282:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  283:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  284:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  285:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  286:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  287:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  288:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  289:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  290:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  291:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  292:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  293:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  294:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  295:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  296:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  297:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  298:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  299:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  300:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.28
+    bid1_quantity: 1
+  301:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  302:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  303:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  304:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  305:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  306:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  307:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  308:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  309:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  310:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  311:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  312:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  313:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  314:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  315:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  316:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  317:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  318:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  319:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  320:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  321:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  322:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  323:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  324:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  325:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  326:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  327:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.2
+    bid1_quantity: 1
+  328:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  329:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  330:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  331:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  332:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  333:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.12
+    bid1_quantity: 1
+  334:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  335:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  336:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  337:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  338:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  339:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  340:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  341:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  342:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  343:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  344:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  345:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  346:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  347:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  348:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  349:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  350:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  351:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  352:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  353:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  354:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  355:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  356:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  357:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  358:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  359:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  360:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  361:
+    ask1_price: 141.92
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  362:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  363:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  364:
+    ask1_price: 142.29
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  365:
+    ask1_price: 142.91
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  366:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  367:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  368:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.61
+    bid1_quantity: 1
+  369:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.77
+    bid1_quantity: 1
+  370:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.77
+    bid1_quantity: 1
+  371:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.61
+    bid1_quantity: 3
+  372:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 141.61
+    bid1_quantity: 1
+  373:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.61
+    bid1_quantity: 2
+  374:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.61
+    bid1_quantity: 1
+  375:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.61
+    bid1_quantity: 1
+  376:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 141.61
+    bid1_quantity: 1
+  377:
+    ask1_price: 143.33
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  378:
+    ask1_price: 143.39
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  379:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  380:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  381:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  382:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  383:
+    ask1_price: 143.01
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  384:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  385:
+    ask1_price: 143.6
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  386:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  387:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  388:
+    ask1_price: 141.98
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  389:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  390:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  391:
+    ask1_price: 143.1
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  392:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  393:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  394:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  395:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  396:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  397:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  398:
+    ask1_price: 143.1
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  399:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  400:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  401:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  402:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  403:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  404:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  405:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  406:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  407:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  408:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  409:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  410:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  411:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  412:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  413:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  414:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  415:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  416:
+    ask1_price: 141.98
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  417:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  418:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  419:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  420:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  421:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  422:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  423:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  424:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  425:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  426:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  427:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  428:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  429:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  430:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  431:
+    ask1_price: 142.72
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  432:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  433:
+    ask1_price: 143.68
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  434:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  435:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  436:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.36
+    bid1_quantity: 1
+  437:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  438:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  439:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  440:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  441:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  442:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  443:
+    ask1_price: 143.6
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  444:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  445:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  446:
+    ask1_price: 142.43
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  447:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  448:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  449:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  450:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  451:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  452:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  453:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  454:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  455:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  456:
+    ask1_price: 141.98
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  457:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  458:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  459:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  460:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  461:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  462:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  463:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  464:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  465:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  466:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  467:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  468:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  469:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  470:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  471:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  472:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  473:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  474:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  475:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  476:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  477:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  478:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  479:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  480:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  481:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  482:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  483:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  484:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  485:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  486:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  487:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  488:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  489:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  490:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  491:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  492:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  493:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  494:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  495:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  496:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  497:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  498:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  499:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  500:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  501:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  502:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  503:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  504:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  505:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  506:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  507:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  508:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  509:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  510:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  511:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  512:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  513:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  514:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  515:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  516:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  517:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  518:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  519:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  520:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  521:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  522:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  523:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  524:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  525:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  526:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  527:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  528:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  529:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  530:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  531:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  532:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  533:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  534:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  535:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  536:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  537:
+    ask1_price: 141.99
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  538:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  539:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  540:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  541:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  542:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  543:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  544:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  545:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  546:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  547:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  548:
+    ask1_price: 141.98
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  549:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  550:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  551:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  552:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  553:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  554:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  555:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  556:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  557:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  558:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  559:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  560:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  561:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  562:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  563:
+    ask1_price: 143.26
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  564:
+    ask1_price: 141.83
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  565:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  566:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  567:
+    ask1_price: 142.95
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  568:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  569:
+    ask1_price: 141.94
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  570:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  571:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  572:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  573:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  574:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  575:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  576:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  577:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  578:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  579:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  580:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  581:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  582:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  583:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  584:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  585:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  586:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  587:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  588:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  589:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  590:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  591:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  592:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  593:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  594:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  595:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  596:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  597:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  598:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  599:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  600:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  601:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  602:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  603:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  604:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  605:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  606:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  607:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  608:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  609:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.44
+    bid1_quantity: 1
+  610:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  611:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.44
+    bid1_quantity: 1
+  612:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  613:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  614:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  615:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  616:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  617:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  618:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  619:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  620:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  621:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  622:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  623:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  624:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  625:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  626:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  627:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  628:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  629:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  630:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  631:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  632:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  633:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  634:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  635:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  636:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  637:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  638:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  639:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  640:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  641:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  642:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  643:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  644:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  645:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  646:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  647:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  648:
+    ask1_price: 142.95
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  649:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  650:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  651:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  652:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  653:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  654:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  655:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  656:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  657:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  658:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  659:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  660:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  661:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  662:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  663:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  664:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  665:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  666:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  667:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  668:
+    ask1_price: 141.99
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  669:
+    ask1_price: 142.95
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  670:
+    ask1_price: 141.99
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  671:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  672:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  673:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  674:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  675:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  676:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  677:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  678:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  679:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  680:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 141.04
+    bid1_quantity: 1
+  681:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  682:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  683:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  684:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  685:
+    ask1_price: 143.26
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  686:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  687:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  688:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  689:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  690:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  691:
+    ask1_price: 143.26
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  692:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  693:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  694:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  695:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  696:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  697:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  698:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  699:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  700:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  701:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  702:
+    ask1_price: 142.11
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  703:
+    ask1_price: 143.26
+    ask1_quantity: 1
+    bid1_price: 141.04
+    bid1_quantity: 1
+  704:
+    ask1_price: 142.11
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  705:
+    ask1_price: 142.11
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  706:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  707:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  708:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  709:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  710:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  711:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  712:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  713:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  714:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  715:
+    ask1_price: 141.9
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  716:
+    ask1_price: 142.09
+    ask1_quantity: 3
+    bid1_price: 0.0
+    bid1_quantity: 0
+  717:
+    ask1_price: 142.09
+    ask1_quantity: 2
+    bid1_price: 0.0
+    bid1_quantity: 0
+  718:
+    ask1_price: 142.09
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  719:
+    ask1_price: 142.09
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  720:
+    ask1_price: 142.09
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  721:
+    ask1_price: 142.09
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  722:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  723:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 0.0
+    bid1_quantity: 0
+  724:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  725:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  726:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  727:
+    ask1_price: 143.26
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  728:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  729:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  730:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  731:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  732:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  733:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  734:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  735:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  736:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  737:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  738:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  739:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  740:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  741:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  742:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  743:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  744:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  745:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  746:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  747:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  748:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  749:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  750:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  751:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  752:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  753:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  754:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  755:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  756:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  757:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  758:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  759:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  760:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  761:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  762:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  763:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  764:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  765:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  766:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  767:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  768:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  769:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  770:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  771:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  772:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  773:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  774:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  775:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  776:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  777:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  778:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  779:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  780:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  781:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  782:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  783:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  784:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  785:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  786:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  787:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  788:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  789:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  790:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  791:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  792:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  793:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  794:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  795:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  796:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  797:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  798:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  799:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  800:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  801:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  802:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  803:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  804:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  805:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  806:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  807:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  808:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  809:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  810:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  811:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  812:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  813:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  814:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  815:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  816:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  817:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.52
+    bid1_quantity: 1
+  818:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.52
+    bid1_quantity: 1
+  819:
+    ask1_price: 142.14
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  820:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  821:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  822:
+    ask1_price: 142.33
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  823:
+    ask1_price: 142.1
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  824:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  825:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  826:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  827:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  828:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  829:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  830:
+    ask1_price: 143.02
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  831:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  832:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  833:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  834:
+    ask1_price: 142.53
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  835:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.68
+    bid1_quantity: 1
+  836:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  837:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  838:
+    ask1_price: 143.44
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  839:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  840:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  841:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  842:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  843:
+    ask1_price: 142.52
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  844:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  845:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  846:
+    ask1_price: 142.52
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  847:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  848:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  849:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  850:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  851:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  852:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.6
+    bid1_quantity: 1
+  853:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  854:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  855:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  856:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  857:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  858:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  859:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.76
+    bid1_quantity: 1
+  860:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  861:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  862:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  863:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  864:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  865:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  866:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  867:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  868:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  869:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.68
+    bid1_quantity: 1
+  870:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  871:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  872:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.68
+    bid1_quantity: 1
+  873:
+    ask1_price: 142.48
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  874:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  875:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.68
+    bid1_quantity: 1
+  876:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  877:
+    ask1_price: 142.52
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  878:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  879:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.68
+    bid1_quantity: 1
+  880:
+    ask1_price: 142.56
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  881:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  882:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.68
+    bid1_quantity: 1
+  883:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.5
+    bid1_quantity: 1
+  884:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  885:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.6
+    bid1_quantity: 1
+  886:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  887:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  888:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  889:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  890:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  891:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  892:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  893:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  894:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  895:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  896:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  897:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 0.0
+    bid1_quantity: 0
+  898:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  899:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.75
+    bid1_quantity: 2
+  900:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  901:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.75
+    bid1_quantity: 2
+  902:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  903:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  904:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  905:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.75
+    bid1_quantity: 2
+  906:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  907:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  908:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.75
+    bid1_quantity: 2
+  909:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  910:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  911:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  912:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.75
+    bid1_quantity: 2
+  913:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  914:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.75
+    bid1_quantity: 2
+  915:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  916:
+    ask1_price: 141.88
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  917:
+    ask1_price: 141.98
+    ask1_quantity: 5
+    bid1_price: 141.72
+    bid1_quantity: 1
+  918:
+    ask1_price: 141.98
+    ask1_quantity: 4
+    bid1_price: 141.72
+    bid1_quantity: 1
+  919:
+    ask1_price: 141.98
+    ask1_quantity: 3
+    bid1_price: 141.72
+    bid1_quantity: 1
+  920:
+    ask1_price: 141.98
+    ask1_quantity: 2
+    bid1_price: 141.72
+    bid1_quantity: 1
+  921:
+    ask1_price: 141.98
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  922:
+    ask1_price: 141.98
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  923:
+    ask1_price: 141.98
+    ask1_quantity: 2
+    bid1_price: 139.5
+    bid1_quantity: 1
+  924:
+    ask1_price: 141.98
+    ask1_quantity: 1
+    bid1_price: 139.5
+    bid1_quantity: 1
+  925:
+    ask1_price: 142.52
+    ask1_quantity: 3
+    bid1_price: 139.5
+    bid1_quantity: 1
+  926:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  927:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  928:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  929:
+    ask1_price: 143.12
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  930:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  931:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  932:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  933:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  934:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  935:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  936:
+    ask1_price: 143.36
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  937:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  938:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  939:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  940:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  941:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  942:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  943:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  944:
+    ask1_price: 143.44
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  945:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  946:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  947:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  948:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  949:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  950:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  951:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  952:
+    ask1_price: 142.24
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  953:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  954:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  955:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  956:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  957:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  958:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  959:
+    ask1_price: 142.0
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  960:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  961:
+    ask1_price: 143.12
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  962:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  963:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  964:
+    ask1_price: 143.85
+    ask1_quantity: 2
+    bid1_price: 140.4
+    bid1_quantity: 1
+  965:
+    ask1_price: 143.44
+    ask1_quantity: 1
+    bid1_price: 140.4
+    bid1_quantity: 1
+  966:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  967:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  968:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  969:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  970:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  971:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  972:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  973:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  974:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  975:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  976:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  977:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  978:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  979:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  980:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  981:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  982:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  983:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  984:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  985:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  986:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  987:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  988:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  989:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  990:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  991:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  992:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  993:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  994:
+    ask1_price: 142.32
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  995:
+    ask1_price: 142.08
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  996:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  997:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  998:
+    ask1_price: 142.16
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1
+  999:
+    ask1_price: 0.0
+    ask1_quantity: 0
+    bid1_price: 141.72
+    bid1_quantity: 1
+  1000:
+    ask1_price: 142.4
+    ask1_quantity: 1
+    bid1_price: 141.72
+    bid1_quantity: 1

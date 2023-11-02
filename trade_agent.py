@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 from price_simulate import price_simulate
-import optimal_MM
 import yaml
 
 class Agent:
@@ -10,34 +9,49 @@ class Agent:
     Price API, receive trade, update portfolio
     """
 
-    def __init__(self, tickers, num_mm):
-        self.current_time = price_simulate.gettime()
+    def __init__(self, tickers,num_mm):
         self.tickers = tickers # single tickers
         self.transaction_path = r"Portfolio and Trade book\trade_book.yml"
         self.orderbook_path = r"Portfolio and Trade book\market_trade.yml"
         self.price_path =r"Portfolio and Trade book\price_his.yml"
-        self.latest_orderbook = price_simulate.get_newest_orderbook()
+        self.price_bot = price_simulate()
+        self.latest_orderbook = self.price_bot.get_newest_orderbook()
+        self.current_time = self.price_bot.timestamp
         self.price_history = []
         self.num_mm = num_mm  #set numbers of MM
-        self.price_bot = price_simulate()
-
+        self.initialize_record()
+        
+    def initialize_record(self):
+        cur_yaml = {self.tickers:{}}
+        with open(self.orderbook_path, 'w') as yaml_file:
+            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)        
+        with open(self.price_path, 'w') as yaml_file:
+            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)
+        with open(self.transaction_path, 'w') as yaml_file:
+            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)            
+        
+                  
     def run_next_round(self):
-        pass
+        self.latest_orderbook = self.price_bot.get_newest_orderbook()
+        self.current_time = self.price_bot.timestamp
 
     def update_tradebook(self) -> None:
         order_book = self.latest_orderbook
+        cur_yaml = None
         with open(self.orderbook_path, 'r') as yamlfile:
             cur_yaml = yaml.safe_load(yamlfile)
-            cur_yaml[self.tickers][self.current_time].append(order_book)
+            cur_yaml[self.tickers][self.current_time] = order_book
+        print(order_book)
         with open(self.orderbook_path, 'w') as yaml_file:
-            yaml.dump(self.price_history, yaml_file, default_flow_style=False)                    
+            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)                    
         
     def update_price(self) -> None:
         order_book = self.latest_orderbook
-        price = (order_book['bid']+order_book['ask'])/2
+        price = (order_book['bid1_price']+order_book['ask1_price'])/2
+        cur_yaml = None
         with open(self.price_path, 'r') as yamlfile:
             cur_yaml = yaml.safe_load(yamlfile)
-            cur_yaml[self.tickers].append(price)
+            cur_yaml[self.tickers][self.current_time] = price
             self.price_history = cur_yaml
         with open(self.price_path, 'w') as yaml_file:
             yaml.dump(self.price_history, yaml_file, default_flow_style=False)
@@ -54,8 +68,15 @@ class Agent:
         """
         with open(self.price_path, 'r') as yamlfile:
             cur_yaml = yaml.safe_load(yamlfile)
-            price = cur_yaml[wanted_ticker][-num_timestamps:]
+            price = cur_yaml[wanted_ticker].values()[-num_timestamps:]
             return price
-        
+         
+    def trade_submit(self,trade) -> None:
+        cur_yaml = None
+        with open(self.transaction_path, 'r') as yamlfile:
+            cur_yaml = yaml.safe_load(yamlfile)
+            cur_yaml[self.tickers][self.current_time] = trade
+        with open(self.transaction_path, 'w') as yaml_file:
+            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)
     
     
