@@ -3,58 +3,51 @@ import numpy as np
 import os
 from price_simulate import price_simulate
 import yaml
+from sqlitedict import SqliteDict
 
 class Agent:
     """
     Price API, receive trade, update portfolio
     """
 
-    def __init__(self, tickers,num_mm):
+    def __init__(self, tickers,num_mm,real_mkt):
         self.tickers = tickers # single tickers
-        self.transaction_path = r"Portfolio and Trade book\trade_book.yml"
-        self.orderbook_path = r"Portfolio and Trade book\market_trade.yml"
-        self.price_path =r"Portfolio and Trade book\price_his.yml"
+        self.path = r"Portfolio and Trade book\example.sqlite"
         self.price_bot = price_simulate()
-        self.latest_orderbook = self.price_bot.get_newest_orderbook()
+        self.real_mkt = real_mkt
+        self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt = self.real_mkt)
         self.current_time = self.price_bot.timestamp
         self.price_history = []
         self.num_mm = num_mm  #set numbers of MM
         self.initialize_record()
         
     def initialize_record(self):
-        cur_yaml = {self.tickers:{}}
-        with open(self.orderbook_path, 'w') as yaml_file:
-            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)        
-        with open(self.price_path, 'w') as yaml_file:
-            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)
-        with open(self.transaction_path, 'w') as yaml_file:
-            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)            
-        
+        market_trade = SqliteDict("example.sqlite", tablename="market_trade", autocommit=True)       
+        price_his = SqliteDict("example.sqlite", tablename="price_his", autocommit=True)
+        trade_book = SqliteDict("example.sqlite", tablename="trade_book", autocommit=True)
+        market_trade.close()
+        price_his.close()
+        trade_book.close()
                   
     def run_next_round(self):
-        self.latest_orderbook = self.price_bot.get_newest_orderbook()
+        self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt = self.real_mkt)
         self.current_time = self.price_bot.timestamp
 
     def update_tradebook(self) -> None:
         order_book = self.latest_orderbook
-        cur_yaml = None
-        with open(self.orderbook_path, 'r') as yamlfile:
-            cur_yaml = yaml.safe_load(yamlfile)
-            cur_yaml[self.tickers][self.current_time] = order_book
-        print(order_book)
-        with open(self.orderbook_path, 'w') as yaml_file:
-            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)                    
-        
+        db = SqliteDict("example.sqlite",tablename="market_trade")
+        db_copy = {self.tickers:order_book}
+        db[self.current_time] = db_copy
+        db.commit()
+        db.close()
+                     
     def update_price(self) -> None:
         order_book = self.latest_orderbook
         price = (order_book['bid1_price']+order_book['ask1_price'])/2
-        cur_yaml = None
-        with open(self.price_path, 'r') as yamlfile:
-            cur_yaml = yaml.safe_load(yamlfile)
-            cur_yaml[self.tickers][self.current_time] = price
-            self.price_history = cur_yaml
-        with open(self.price_path, 'w') as yaml_file:
-            yaml.dump(self.price_history, yaml_file, default_flow_style=False)
+        db = SqliteDict("example.sqlite",tablename="price_his")
+        db[self.current_time] = price
+        db.commit()
+        db.close()
     
     def get_orderbook(self) -> dict:
         return self.latest_orderbook
@@ -72,11 +65,11 @@ class Agent:
             return price
          
     def trade_submit(self,trade) -> None:
-        cur_yaml = None
-        with open(self.transaction_path, 'r') as yamlfile:
-            cur_yaml = yaml.safe_load(yamlfile)
-            cur_yaml[self.tickers][self.current_time] = trade
-        with open(self.transaction_path, 'w') as yaml_file:
-            yaml.dump(cur_yaml, yaml_file, default_flow_style=False)
+        db = SqliteDict("example.sqlite",tablename="trade_book")
+        db_copy = {self.tickers:trade}
+        db[self.current_time] = db_copy
+        db.commit()
+        db.close()
+
     
     
