@@ -1,2 +1,14 @@
 function add: Shock, cancell
 products = equity, derivative, borrow/lending with restriction
+
+
+limited order book based on:
+    price: log normal
+    order_time: poisson
+    size: normal
+    price_spread: (+-)3 for now
+
+MM: expected to collect all orders
+inventory managment
+market frequence does not match player's decision frequency
+
