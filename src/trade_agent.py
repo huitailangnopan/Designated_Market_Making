@@ -5,6 +5,8 @@ from src.price_simulate import price_simulate
 import yaml
 from sqlitedict import SqliteDict
 from src.optimalMM import trading_strategy
+import os
+print("2"+os.getcwd())
 
 class Agent:
     """

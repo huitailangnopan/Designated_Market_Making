@@ -1,4 +1,6 @@
 from sqlitedict import SqliteDict
+import os
+print("4"+os.getcwd())
 
 def read(current_time):
     db = SqliteDict("exchange.sqlite",tablename="market_trade")

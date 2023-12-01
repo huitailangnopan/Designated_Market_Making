@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 from src.utils import order_process
-
+import os
+print("3"+os.getcwd())
 def trading_strategy(current_time):
     orderbook = order_process.read(current_time)
     ask1_price = orderbook['ask1_price']

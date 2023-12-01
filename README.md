@@ -1,5 +1,6 @@
 # Designated_Market_Making
-![Alt text](image.png)
-![Alt text](image-1.png)
+![functions.png](proposal%2Ffunctions.png)
+![code_structure.png](proposal%2Fcode_structure.png)
+
 ### Order Book example
-![Alt text](image-2.png)
+![example_orderbook.png](proposal%2Fexample_orderbook.png)
