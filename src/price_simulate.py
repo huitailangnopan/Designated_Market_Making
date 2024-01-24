@@ -1,13 +1,15 @@
 import pandas as pd
 import numpy as np
 import src.browniance_motion as bm
+from scipy.stats import poisson
+import random
 
 class price_simulate:
     def __init__(self,MarketPath = None) -> None:
         self.marketdf = pd.read_csv(MarketPath,nrows=10000) if MarketPath != None else print("Generate simulate market")
         self.timestamp = 0
         self.volatility = 0.3
-        self.steps = 100
+        self.steps = 300
         self.spread = 0.05
         self.market = bm.Brownian(volatility=self.volatility,steps=self.steps)
     
@@ -30,8 +32,22 @@ class price_simulate:
             price = self.market[0][self.timestamp]
             dt = self.spread/self.steps
             spread = np.random.normal(0,np.sqrt(dt))
-            orderbook['ask1_price'] = price+spread/2
-            orderbook['ask1_quantity'] = np.random.choice([1,2,3])
-            orderbook['bid1_price'] = price-spread/2
-            orderbook['bid1_quantity'] = np.random.choice([1,2,3])       
+            p_order = poisson.pmf(k=1, mu=0.7)
+            if random.uniform(0, 1)<p_order:
+                orderbook['ask1_price'] = 0
+                orderbook['ask1_quantity'] = 0
+                orderbook['bid1_price'] = 0
+                orderbook['bid1_quantity'] = 0
+            else:
+                orderbook['ask1_price'] = price+spread/2
+                orderbook['ask1_quantity'] = np.random.choice([1,2,3])
+                orderbook['bid1_price'] = price-spread/2
+                orderbook['bid1_quantity'] = np.random.choice([1,2,3])
+            #else:
+            """
+                orderbook['ask1_price'] = 0
+                orderbook['ask1_quantity'] = 0
+                orderbook['bid1_price'] = 0
+                orderbook['bid1_quantity'] = 0
+            """
         return orderbook

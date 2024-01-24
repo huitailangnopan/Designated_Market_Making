@@ -6,7 +6,7 @@ import yaml
 from sqlitedict import SqliteDict
 from src.optimalMM import trading_strategy
 import os
-print("2"+os.getcwd())
+
 
 class Agent:
     """
@@ -19,6 +19,7 @@ class Agent:
         self.price_bot = price_simulate()
         self.real_mkt = real_mkt
         self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt = self.real_mkt)
+        self.last_time = None
         self.current_time = self.price_bot.timestamp
         self.price_history = []
         self.num_mm = num_mm  #set numbers of MM
@@ -34,6 +35,7 @@ class Agent:
                   
     def run_next_round(self):
         self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt = self.real_mkt)
+        self.last_time = self.current_time
         self.current_time = self.price_bot.timestamp
 
     def update_tradebook(self) -> None:
@@ -46,11 +48,26 @@ class Agent:
                      
     def update_price(self) -> None:
         order_book = self.latest_orderbook
-        price = (order_book['bid1_price']+order_book['ask1_price'])/2
+        if order_book['bid1_price']* order_book['ask1_price'] !=0:
+            price = (order_book['bid1_price']+order_book['ask1_price'])/2
+        else:
+            price = self.proxy_price(self.price_history)
         db = SqliteDict("exchange.sqlite",tablename="price_his")
         db[self.current_time] = price
         db.commit()
         db.close()
+        self.price_history.append(price)
+    
+    def proxy_price(self,price_history):
+        if len(price_history)==0:
+            return 0
+        if price_history[-1]==0:
+            if len(price_history)==1:
+                return 0
+            else:
+                return self.proxy_price(price_history[:len(price_history)-1])
+        else:
+            return price_history[-1]
     
     def get_orderbook(self) -> dict:
         return self.latest_orderbook
