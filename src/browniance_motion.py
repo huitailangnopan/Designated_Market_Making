@@ -2,18 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def Brownian(volatility,steps):
+def Brownian(volatility,steps,num,p_start):
 
     # drift coefficient
-    mu = 0.1
+    mu = 0.385
     # number of steps
     n = steps
     # time in years
     T = 1
     # number of sims
-    M = 100
+    M = num
     # initial stock price
-    S0 = 100
+    S0 = p_start
     # volatility
     sigma = volatility
 

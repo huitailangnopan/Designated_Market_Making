@@ -11,7 +11,9 @@ class price_simulate:
         self.volatility = 0.3
         self.steps = 300
         self.spread = 0.05
-        self.market = bm.Brownian(volatility=self.volatility,steps=self.steps)
+        self.num_sim = 5
+        self.p_start = 134
+        self.market = bm.Brownian(volatility=self.volatility,steps=self.steps,num=self.num_sim,p_start=self.p_start)
     
     def LoadMarket(self,MarketPath) -> None:
         self.marketdf = pd.read_csv(MarketPath,nrows=10000)

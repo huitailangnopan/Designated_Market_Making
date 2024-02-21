@@ -85,6 +85,9 @@ class Agent:
             return price
          
     def trade_submit(self) -> None:
+        """
+        conclude orders from all market makers
+        """
         db = SqliteDict("exchange.sqlite",tablename="mm1")
         db_copy = db[self.current_time]
         db.close()
@@ -92,6 +95,9 @@ class Agent:
         db[self.current_time] = db_copy
         db.commit()
         db.close()
+
+    def exchange_execution(self):
+        pass
         
     def send_book(self):
         trading_strategy(self.current_time)
