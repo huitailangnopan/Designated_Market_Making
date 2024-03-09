@@ -21,3 +21,6 @@ def trading_strategy(current_time):
     myorder = {'IBM':myorder}
     order_process.submit(current_time,myorder)
 
+"""
+make price into one list and bid into another list
+"""
