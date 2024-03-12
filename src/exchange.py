@@ -20,10 +20,12 @@ class exchange:
         """
         self.marketorder = SqliteDict("exchange.sqlite", tablename="market_trade")
         self.marketorder = self.marketorder[self.current_time]
+        self.marketorder = self.marketorder[self.assets]
 
     def load_trade(self):
         self.tradeorder = SqliteDict("exchange.sqlite",tablename="trade_book")
         self.tradeorder = self.tradeorder[self.current_time]
+        self.tradeorder = self.tradeorder[self.assets]
 
     def exchange_execute(self):
         """

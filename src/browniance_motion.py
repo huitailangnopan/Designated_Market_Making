@@ -1,35 +1,17 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
-def Brownian(volatility,steps,num,p_start):
-
-    # drift coefficient
+def Brownian(volatility, steps, num, p_start):
     mu = 0.385
-    # number of steps
-    n = steps
-    # time in years
     T = 1
-    # number of sims
-    M = num
-    # initial stock price
+    dt = T / steps
     S0 = p_start
-    # volatility
     sigma = volatility
 
-    # calc each time step
-    dt = T/n
+    random_component = np.random.normal(0, np.sqrt(dt), size=(num, steps)).T
+    St = np.exp((mu - sigma**2 / 2) * dt + sigma * random_component)
 
-    # simulation using numpy arrays
-    St = np.exp(
-        (mu - sigma**2/2) * dt
-        +sigma * np.random.normal(0,np.sqrt(dt),size=(M,n)).T
-    )
-
-    # include array of 1's
-    St = np.vstack([np.ones(M), St])
-
-    # multiply through by S0 and return the cumulative product of elements along a given simulation path(axis = 0)
+    St = np.vstack([np.ones(num), St])
     St = S0 * St.cumprod(axis=0)
 
     return St.T
