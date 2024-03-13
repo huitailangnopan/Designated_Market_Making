@@ -17,6 +17,9 @@ class Agent:
         self.num_mm = num_mm
         self.initialize_record()
         self.exchange = exchange()
+        self.mm_orderbook = []
+        self.matched_orders = []
+        self.all_orders_updated = []
 
     def initialize_record(self):
         for table in ["market_trade", "price_his", "trade_book"]:
@@ -24,11 +27,16 @@ class Agent:
                 pass
 
     def run_next_round(self):
+        self.price_bot.updatedOrderbookfromExchange(self.all_orders_updated)
         self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt=self.real_mkt)
         self.current_time = self.price_bot.timestamp
 
-    def update_tradebook(self):
-        self.update_db("market_trade", {self.tickers: self.latest_orderbook})
+    def update_markettradebook(self):
+        orders_collection = []
+        for i in self.latest_orderbook:
+            orders_collection.append(i.__dict__())
+        self.update_db("market_trade", orders_collection)
+
 
     def update_price(self):
         order_book = self.latest_orderbook
@@ -37,6 +45,13 @@ class Agent:
         self.price_history.append(price)
 
     def calculate_price(self, order_book):
+        ask_prices = []
+        bid_prices = []
+        for i in order_book:
+            if i.getordertype() == "SELL":
+                ask_prices.append(i.getprice())
+            if i.getordertype() == "BUY":
+                bid_prices.append(i.getprice())
         if len(order_book['bid_price']) * len(order_book['ask_price']) != 0:
             return round((max(order_book['bid_price']) + min(order_book['ask_price'])) / 2, 2)
         else:
@@ -49,22 +64,33 @@ class Agent:
                 return price
         return 0
 
-    def get_orderbook(self):
+    def get_markettradebook(self):
         return self.latest_orderbook
 
-    def trade_submit(self):
-        with SqliteDict("exchange.sqlite", tablename="mm1") as db:
-            self.update_db("trade_book", db[self.current_time])
+    def get_mmtradebook(self):
+        return self.mm_orderbook
+
+    def mmtrade_submit(self):
+        orders_collection = []
+        for i in self.mm_orderbook:
+            orders_collection.append(i.__dict__())
+        self.update_db("trade_book", orders_collection)
 
     def update_db(self, table, data):
         with SqliteDict("exchange.sqlite", tablename=table, autocommit=True) as db:
             db[self.current_time] = data
 
     def exchange_execution(self):
-        pass
+        self.exchange.load_market(self.latest_orderbook)
+        self.exchange.load_trade(self.mm_orderbook)
+        self.exchange.update_time(self.current_time)
+        self.matched_orders, self.all_orders_updated = self.exchange.exchange_execute()
 
     def send_book(self):
-        trading_strategy(self.current_time)
+        mm_no = 1
+        self.mm_orderbook = []
+        for i in range(mm_no):
+            self.mm_orderbook = trading_strategy(self.current_time, self.latest_orderbook, i)
 
 
 '''
