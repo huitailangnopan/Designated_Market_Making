@@ -45,19 +45,40 @@ class exchange:
                             order.setstatus('PENDING')
                             match_order.setstatus('EXECUTED')
                             order.order_quantity = order.getorderquantity() - match_order.getorderquantity()
-                            matched.append({"Matched Price": match_order.getorderprice(), "Matched Quantity": match_order.getorderquantity()})
-                            print(f"Matched Price: {match_order.getorderprice()}, Quantity: {match_order.getorderquantity()}")
+                            buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
+                            seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
+                            matched.append({"Matched Price": match_order.getorderprice(),
+                                            "Matched Quantity": match_order.getorderquantity(),
+                                            "Buyer": buyer,
+                                            "Seller": seller})
+                            print(f"Matched Price: {match_order.getorderprice()}, "
+                                  f"Quantity: {match_order.getorderquantity()}, "
+                                  f"Buyer: {buyer}, Seller: {seller}")
                         elif order.getorderquantity() < match_order.getorderquantity():
                             order.setstatus('EXECUTED')
                             match_order.setstatus('PENDING')
                             match_order.order_quantity = match_order.getorderquantity() - order.getorderquantity()
-                            matched.append({"Matched Price": order.getorderprice(), "Matched Quantity": order.getorderquantity()})
-                            print(f"Matched Price: {order.getorderprice()}, Quantity: {order.getorderquantity()}")
+                            buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
+                            seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
+                            matched.append({"Matched Price": match_order.getorderprice(),
+                                            "Matched Quantity": match_order.getorderquantity(),
+                                            "Buyer": buyer,
+                                            "Seller": seller})
+                            print(f"Matched Price: {match_order.getorderprice()}, "
+                                  f"Quantity: {match_order.getorderquantity()}, "
+                                  f"Buyer: {buyer}, Seller: {seller}")
                         else:
                             order.setstatus('EXECUTED')
                             match_order.setstatus('EXECUTED')
-                            matched.append({"Matched Price": order.getorderprice(), "Matched Quantity": order.getorderquantity()})
-                            print(f"Matched Price: {order.getorderprice()}, Quantity: {order.getorderquantity()}")
+                            buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
+                            seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
+                            matched.append({"Matched Price": match_order.getorderprice(),
+                                            "Matched Quantity": match_order.getorderquantity(),
+                                            "Buyer": buyer,
+                                            "Seller": seller})
+                            print(f"Matched Price: {match_order.getorderprice()}, "
+                                  f"Quantity: {match_order.getorderquantity()}, "
+                                  f"Buyer: {buyer}, Seller: {seller}")
         return matched,orders
 
 
