@@ -2,12 +2,13 @@ import pandas as pd
 import numpy as np
 from src.price_simulate import PriceSimulator
 from sqlitedict import SqliteDict
-from src.optimalMM import trading_strategy
+from src.optimalMM import marketmarker
 from src.exchange import exchange
 
 
 class Agent:
-    def __init__(self, tickers, num_mm, real_mkt):
+    def __init__(self, tickers, num_mm, real_mkt, num_rounds):
+        self.num_rounds = num_rounds
         self.tickers = tickers
         self.price_bot = PriceSimulator()
         self.real_mkt = real_mkt
@@ -20,6 +21,7 @@ class Agent:
         self.mm_orderbook = []
         self.matched_orders = []
         self.all_orders_updated = []
+        self.mm1 = marketmarker()
 
     def initialize_record(self):
         for table in ["market_trade", "price_his", "trade_book"]:
@@ -27,8 +29,9 @@ class Agent:
                 pass
 
     def run_next_round(self):
-        self.price_bot.updatedOrderbookfromExchange(self.all_orders_updated)
-        self.latest_orderbook = self.price_bot.get_newest_orderbook(real_mkt=self.real_mkt)
+        self.latest_orderbook = []
+        self.price_bot.updatedOrderbookfromExchange(self.matched_orders)
+        self.latest_orderbook.extend(self.price_bot.get_newest_orderbook(real_mkt=self.real_mkt))
         self.current_time = self.price_bot.timestamp
 
     def update_markettradebook(self):
@@ -49,11 +52,11 @@ class Agent:
         bid_prices = []
         for i in order_book:
             if i.getordertype() == "SELL":
-                ask_prices.append(i.getprice())
+                ask_prices.append(i.order_price)
             if i.getordertype() == "BUY":
-                bid_prices.append(i.getprice())
-        if len(order_book['bid_price']) * len(order_book['ask_price']) != 0:
-            return round((max(order_book['bid_price']) + min(order_book['ask_price'])) / 2, 2)
+                bid_prices.append(i.order_price)
+        if len(bid_prices) * len(ask_prices) != 0:
+            return round((max(bid_prices) + min(ask_prices)) / 2, 2)
         else:
             return self.proxy_price(self.price_history)
 
@@ -87,10 +90,18 @@ class Agent:
         self.matched_orders, self.all_orders_updated = self.exchange.exchange_execute()
 
     def send_book(self):
-        mm_no = 1
         self.mm_orderbook = []
-        for i in range(mm_no):
-            self.mm_orderbook = trading_strategy(self.current_time, self.latest_orderbook, i)
+        self.mm1.general_update(self.matched_orders, self.current_time, self.tickers, 1)
+        self.mm_orderbook.extend(self.mm1.trading_strategy(self.current_time, self.latest_orderbook, 1))
+
+    def record_allplayers(self):
+        if self.current_time >= self.num_rounds:
+            playersIC = {}
+            playersIC["mm1_inventory"] = self.mm1.inventory_history
+            playersIC["mm1_cash"] = self.mm1.cash_history
+            playersIC["p1_inventory"], playersIC["p1_cash"], playersIC["p3_inventory"], playersIC["p3_cash"] = self.price_bot.record_participants()
+            df = pd.DataFrame.from_dict(playersIC)
+            df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
 
 
 '''

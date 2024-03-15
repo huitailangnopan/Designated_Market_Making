@@ -22,14 +22,16 @@ def main():
 
 
     # Initialize the trading agent
-    trading_agent = Agent(tickers=stock_symbol, num_mm= number_of_mm,real_mkt=real_mkt)
+    trading_agent = Agent(tickers=stock_symbol, num_mm= number_of_mm,real_mkt=real_mkt, num_rounds=total_rounds)
 
     # Main trading simulation loop
     for round in range(total_rounds):
-        trading_agent.update_tradebook()
+        trading_agent.update_markettradebook()
         trading_agent.update_price()
         trading_agent.send_book()
-        trading_agent.trade_submit()
+        trading_agent.mmtrade_submit()
+        trading_agent.exchange_execution()
+        trading_agent.record_allplayers()
         trading_agent.run_next_round()
     print("program finished")
 
