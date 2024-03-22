@@ -35,11 +35,15 @@ class Participant1:
         five_steps_later = self.future_price[self.current_time + 4]
         profit_margin = abs(five_steps_later - self.future_price[self.current_time - 1])
         if five_steps_later > self.future_price[self.current_time - 1]:
-            bid_price = self.future_price[self.current_time] + 0.05 * profit_margin
-            self.orders.append(self.generate_marketorder(-1, 'BUY', bid_price, self.max_tolerance - self.inventory))
+            bid_price = round(self.future_price[self.current_time] + 0.05 * profit_margin, 2)
+            bid_quantity = min(max(self.max_tolerance - self.inventory, 0),5)
+            if bid_quantity > 0:
+                self.orders.append(self.generate_marketorder(-1, 'BUY', bid_price, bid_quantity))
         else:
-            ask_price = self.future_price[self.current_time - 1] - 0.05 * profit_margin
-            self.orders.append(self.generate_marketorder(-1, 'SELL', ask_price, self.max_tolerance + self.inventory))
+            ask_price = round(self.future_price[self.current_time - 1] - 0.05 * profit_margin, 2)
+            ask_quantity = min(max(self.max_tolerance + self.inventory, 0),5)
+            if ask_quantity > 0:
+                self.orders.append(self.generate_marketorder(-1, 'SELL', ask_price, ask_quantity))
         self.prev_order = self.orders
         return self.orders
 
@@ -52,11 +56,11 @@ class Participant1:
     def update_inventory(self, matched, id):
         for i in matched:
             if i["Buyer"] == id:
-                self.inventory += i["Quantity"]
-                self.cash -= i["Quantity"] * i["Price"]
+                self.inventory += i["Matched Quantity"]
+                self.cash -= i["Matched Quantity"] * i["Matched Price"]
             elif i["Seller"] == id:
-                self.inventory -= i["Quantity"]
-                self.cash += i["Quantity"] * i["Price"]
+                self.inventory -= i["Matched Quantity"]
+                self.cash += i["Matched Quantity"] * i["Matched Price"]
         self.inventory_history.append(self.inventory)
         self.cash_history.append(self.cash)
     def record_inventory(self):
@@ -103,12 +107,15 @@ class Participant3:
             expected_growth = self.prev_price[self.current_time - 1] - self.prev_price[self.current_time - 2]
             profit_margin = abs(self.prev_price[self.current_time - 1] - self.prev_price[self.current_time - 2])
             if expected_growth > 0:
-                bid_price = self.prev_price[self.current_time - 1] + 0.05 * profit_margin
-                self.orders.append(self.generate_marketorder(-3, 'BUY', bid_price, self.max_tolerance - self.inventory))
+                bid_price = round(self.prev_price[self.current_time - 1] + 0.05 * profit_margin, 2)
+                bid_quantity = min(max(self.max_tolerance - self.inventory, 0), 5)
+                if bid_quantity > 0:
+                    self.orders.append(self.generate_marketorder(-3, 'BUY', bid_price, bid_quantity))
             else:
-                ask_price = self.prev_price[self.current_time - 1] - 0.05 * profit_margin
-                self.orders.append(
-                    self.generate_marketorder(-3, 'SELL', ask_price, self.max_tolerance + self.inventory))
+                ask_price = round(self.prev_price[self.current_time - 1] - 0.05 * profit_margin, 2)
+                ask_quantity = min(max(self.max_tolerance + self.inventory, 0), 5)
+                if ask_quantity > 0:
+                    self.orders.append(self.generate_marketorder(-3, 'SELL', ask_price, ask_quantity))
             self.prev_order = self.orders
         return self.orders
 
@@ -121,11 +128,11 @@ class Participant3:
     def update_inventory(self, matched, id):
         for i in matched:
             if i["Buyer"] == id:
-                self.inventory += i["Quantity"]
-                self.cash -= i["Quantity"] * i["Price"]
+                self.inventory += i["Matched Quantity"]
+                self.cash -= i["Matched Quantity"] * i["Matched Price"]
             elif i["Seller"] == id:
-                self.inventory -= i["Quantity"]
-                self.cash += i["Quantity"] * i["Price"]
+                self.inventory -= i["Matched Quantity"]
+                self.cash += i["Matched Quantity"] * i["Matched Price"]
         self.inventory_history.append(self.inventory)
         self.cash_history.append(self.cash)
 

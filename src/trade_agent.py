@@ -20,6 +20,9 @@ class Agent:
         self.exchange = exchange()
         self.mm_orderbook = []
         self.matched_orders = []
+        self.matched_orders_record = {"Time":[],"Matched Price":[],"Matched Quantity":[],"Buyer":[],"Seller":[]}
+        self.all_orders_record = {"order_id":[],"customer_id":[],"order_time":[],
+                                  "asset":[],"order_type":[],"order_price":[],"order_quantity":[],"total_amount":[],"status":[]}
         self.all_orders_updated = []
         self.mm1 = marketmarker()
 
@@ -88,10 +91,41 @@ class Agent:
         self.exchange.load_trade(self.mm_orderbook)
         self.exchange.update_time(self.current_time)
         self.matched_orders, self.all_orders_updated = self.exchange.exchange_execute()
+        self.record_matched_orders()
+        self.record_all_orders()
+
+    def record_matched_orders(self):
+        for i in self.matched_orders:
+            self.matched_orders_record["Time"].append(i["Time"])
+            self.matched_orders_record["Matched Price"].append(i["Matched Price"])
+            self.matched_orders_record["Matched Quantity"].append(i["Matched Quantity"])
+            self.matched_orders_record["Buyer"].append(i["Buyer"])
+            self.matched_orders_record["Seller"].append(i["Seller"])
+
+    def record_all_orders(self):
+        for i in self.all_orders_updated:
+            i = i.__dict__()
+            self.all_orders_record["order_id"].append(i["order_id"])
+            self.all_orders_record["customer_id"].append(i["customer_id"])
+            self.all_orders_record["order_time"].append(i["order_time"])
+            self.all_orders_record["asset"].append(i["asset"])
+            self.all_orders_record["order_type"].append(i["order_type"])
+            self.all_orders_record["order_price"].append(i["order_price"])
+            self.all_orders_record["order_quantity"].append(i["order_quantity"])
+            self.all_orders_record["total_amount"].append(i["total_amount"])
+            self.all_orders_record["status"].append(i["status"])
+
+    def matched_to_csv(self):
+        df = pd.DataFrame({ key:pd.Series(value) for key, value in self.matched_orders_record.items() })
+        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\matched_orders.csv")
+
+    def allorders_to_csv(self):
+        df = pd.DataFrame({ key:pd.Series(value) for key, value in self.all_orders_record.items() })
+        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\all_orders.csv")
 
     def send_book(self):
         self.mm_orderbook = []
-        self.mm1.general_update(self.matched_orders, self.current_time, self.tickers, 1)
+        self.mm1.general_update(self.matched_orders, self.tickers, self.current_time)
         self.mm_orderbook.extend(self.mm1.trading_strategy(self.current_time, self.latest_orderbook, 1))
 
     def record_allplayers(self):
@@ -100,8 +134,11 @@ class Agent:
             playersIC["mm1_inventory"] = self.mm1.inventory_history
             playersIC["mm1_cash"] = self.mm1.cash_history
             playersIC["p1_inventory"], playersIC["p1_cash"], playersIC["p3_inventory"], playersIC["p3_cash"] = self.price_bot.record_participants()
-            df = pd.DataFrame.from_dict(playersIC)
+            playersIC["price_history"] = self.price_history
+            df = pd.DataFrame({ key:pd.Series(value) for key, value in playersIC.items() })
             df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
+            self.matched_to_csv()
+            self.allorders_to_csv()
 
 
 '''

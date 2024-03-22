@@ -47,11 +47,14 @@ class exchange:
                             order.order_quantity = order.getorderquantity() - match_order.getorderquantity()
                             buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
                             seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
-                            matched.append({"Matched Price": match_order.getorderprice(),
+                            matched_price = min(match_order.getorderprice(), order.getorderprice())
+                            matched.append({"Time": self.current_time,
+                                            "Matched Price": matched_price,
                                             "Matched Quantity": match_order.getorderquantity(),
                                             "Buyer": buyer,
                                             "Seller": seller})
-                            print(f"Matched Price: {match_order.getorderprice()}, "
+                            print(f"Time: {self.current_time}, "
+                                  f"Matched Price: {matched_price}, "
                                   f"Quantity: {match_order.getorderquantity()}, "
                                   f"Buyer: {buyer}, Seller: {seller}")
                         elif order.getorderquantity() < match_order.getorderquantity():
@@ -60,23 +63,29 @@ class exchange:
                             match_order.order_quantity = match_order.getorderquantity() - order.getorderquantity()
                             buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
                             seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
-                            matched.append({"Matched Price": match_order.getorderprice(),
-                                            "Matched Quantity": match_order.getorderquantity(),
+                            matched_price = min(match_order.getorderprice(), order.getorderprice())
+                            matched.append({"Time": self.current_time,
+                                            "Matched Price": matched_price,
+                                            "Matched Quantity": order.getorderquantity(),
                                             "Buyer": buyer,
                                             "Seller": seller})
-                            print(f"Matched Price: {match_order.getorderprice()}, "
-                                  f"Quantity: {match_order.getorderquantity()}, "
+                            print(f"Time: {self.current_time}, "
+                                  f"Matched Price: {matched_price}, "
+                                  f"Quantity: {order.getorderquantity()}, "
                                   f"Buyer: {buyer}, Seller: {seller}")
                         else:
                             order.setstatus('EXECUTED')
                             match_order.setstatus('EXECUTED')
                             buyer = order.getcustomerid() if order.getordertype() == 'BUY' else match_order.getcustomerid()
                             seller = match_order.getcustomerid() if order.getordertype() == 'BUY' else order.getcustomerid()
-                            matched.append({"Matched Price": match_order.getorderprice(),
+                            matched_price = min(match_order.getorderprice(), order.getorderprice())
+                            matched.append({"Time": self.current_time,
+                                            "Matched Price": matched_price,
                                             "Matched Quantity": match_order.getorderquantity(),
                                             "Buyer": buyer,
                                             "Seller": seller})
-                            print(f"Matched Price: {match_order.getorderprice()}, "
+                            print(f"Time: {self.current_time}, "
+                                  f"Matched Price: {matched_price}, "
                                   f"Quantity: {match_order.getorderquantity()}, "
                                   f"Buyer: {buyer}, Seller: {seller}")
         return matched,orders
