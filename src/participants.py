@@ -12,7 +12,7 @@ class Participant1:
         self.inventory = 0
         self.inventory_history = []
         self.asset = "IBM"
-        self.max_tolerance = 20
+        self.max_tolerance = 25
         self.cash = 100
         self.cash_history = []
 
@@ -83,7 +83,7 @@ class Participant3:
         self.inventory = 0
         self.inventory_history = []
         self.asset = "IBM"
-        self.max_tolerance = 20
+        self.max_tolerance = 25
         self.cash = 100
         self.cash_history = []
 

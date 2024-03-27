@@ -1,33 +1,61 @@
-import pandas as pd
-import numpy as np
-from sqlitedict import SqliteDict
-from src.utils.analysis import sql_to_list,sql_to_pd
 
 class exchange:
     def __int__(self,current_time,marketorder,mm_orderbook):
+        """
+        Initialize the exchange class with the given parameters.
+
+        Parameters:
+        current_time (int): The current time.
+        marketorder (list): The market order book.
+        mm_orderbook (list): The market maker order book.
+        """
         self.current_time = None
         self.marketorder = None
         self.mm_orderbook = None
         self.asset = "IBM"
 
     def update_time(self,time):
+        """
+        Update the current time.
+
+        Parameters:
+        time (int): The new time.
+        """
         self.current_time = time
 
     def load_assets(self, assets):
+        """
+        Load the assets.
+
+        Parameters:
+        assets (list): The assets to be loaded.
+        """
         self.assets = assets
 
     def load_market(self,marketorder):
         """
-        change_todo: change the dict key from sql_to_pd to a column in df, add the time index as well
+        Load the market order book.
+
+        Parameters:
+        marketorder (list): The market order book to be loaded.
         """
         self.marketorder = marketorder
 
     def load_trade(self,mm_orderbook):
+        """
+        Load the market maker order book.
+
+        Parameters:
+        mm_orderbook (list): The market maker order book to be loaded.
+        """
         self.mm_orderbook = mm_orderbook
 
     def exchange_execute(self):
         """
-        match the orders in the market order book and trade order book
+        Execute the exchange by matching the orders in the market order book and trade order book.
+
+        Returns:
+        list: The matched orders and the updated orders.
         """
         orders = self.marketorder.copy()
         orders.extend(self.mm_orderbook)

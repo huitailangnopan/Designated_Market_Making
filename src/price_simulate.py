@@ -11,8 +11,8 @@ class PriceSimulator:
     def __init__(self, MarketPath=None):
         self.marketdf = pd.read_csv(MarketPath, nrows=10000) if MarketPath else print("Generate simulate market")
         self.timestamp = 0
-        self.volatility = 0.3
-        self.steps = 2000
+        self.volatility = 0.25
+        self.steps = 4000
         self.spread = 0.05
         self.num_sim = 5
         self.p_start = 134
@@ -64,13 +64,13 @@ class PriceSimulator:
                 # p_order = poisson.pmf(k=1, mu=0.7)
                 # if random.uniform(0, 1) >= p_order:
                 ask_price = round(price + spread / 2, 1)
-                ask_quantity = np.random.choice([1, 2, 3])
+                ask_quantity = random.randint(1, 5)
                 self.updatebook(self.generate_marketorder('SELL', ask_price, ask_quantity))
             for i in range(random.randint(0, 5)):
                 price = self.market[0][self.timestamp]
                 spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
                 bid_price = round(price - spread / 2, 1)
-                bid_quantity = np.random.choice([1, 2, 3])
+                bid_quantity = random.randint(1, 5)
                 self.updatebook(self.generate_marketorder('BUY', bid_price, bid_quantity))
         self.get_order_marketparticipants()
         return self.orderbook

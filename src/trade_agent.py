@@ -8,6 +8,15 @@ from src.exchange import exchange
 
 class Agent:
     def __init__(self, tickers, num_mm, real_mkt, num_rounds):
+        """
+        Initialize the Agent class with the given parameters.
+
+        Parameters:
+        tickers (list): List of tickers the agent is trading.
+        num_mm (int): Number of market makers.
+        real_mkt (bool): If True, use real market data. If False, simulate market data.
+        num_rounds (int): Number of rounds the agent will trade.
+        """
         self.num_rounds = num_rounds
         self.tickers = tickers
         self.price_bot = PriceSimulator()
@@ -27,30 +36,50 @@ class Agent:
         self.mm1 = marketmarker()
 
     def initialize_record(self):
+        """
+        Initialize the database tables for the agent.
+        """
         for table in ["market_trade", "price_his", "trade_book"]:
             with SqliteDict("exchange.sqlite", tablename=table, autocommit=True) as db:
                 pass
 
     def run_next_round(self):
+        """
+        Run the next round of trading.
+        """
         self.latest_orderbook = []
         self.price_bot.updatedOrderbookfromExchange(self.matched_orders)
         self.latest_orderbook.extend(self.price_bot.get_newest_orderbook(real_mkt=self.real_mkt))
         self.current_time = self.price_bot.timestamp
 
     def update_markettradebook(self):
+        """
+        Update the market trade book with the latest order book.
+        """
         orders_collection = []
         for i in self.latest_orderbook:
             orders_collection.append(i.__dict__())
         self.update_db("market_trade", orders_collection)
 
-
     def update_price(self):
+        """
+        Update the price based on the latest order book.
+        """
         order_book = self.latest_orderbook
         price = self.calculate_price(order_book)
         self.update_db("price_his", price)
         self.price_history.append(price)
 
     def calculate_price(self, order_book):
+        """
+        Calculate the price based on the order book.
+
+        Parameters:
+        order_book (list): The current order book.
+
+        Returns:
+        float: The calculated price.
+        """
         ask_prices = []
         bid_prices = []
         for i in order_book:
@@ -64,6 +93,15 @@ class Agent:
             return self.proxy_price(self.price_history)
 
     def proxy_price(self, price_history):
+        """
+        Get the proxy price from the price history.
+
+        Parameters:
+        price_history (list): The history of prices.
+
+        Returns:
+        float: The proxy price.
+        """
         # Iterate backwards to find the first non-zero price
         for price in reversed(price_history):
             if price != 0:
@@ -71,22 +109,47 @@ class Agent:
         return 0
 
     def get_markettradebook(self):
+        """
+        Get the latest market trade book.
+
+        Returns:
+        list: The latest market trade book.
+        """
         return self.latest_orderbook
 
     def get_mmtradebook(self):
+        """
+        Get the market maker trade book.
+
+        Returns:
+        list: The market maker trade book.
+        """
         return self.mm_orderbook
 
     def mmtrade_submit(self):
+        """
+        Submit the market maker trade.
+        """
         orders_collection = []
         for i in self.mm_orderbook:
             orders_collection.append(i.__dict__())
         self.update_db("trade_book", orders_collection)
 
     def update_db(self, table, data):
+        """
+        Update the database with the given data.
+
+        Parameters:
+        table (str): The table to update.
+        data (dict): The data to update the table with.
+        """
         with SqliteDict("exchange.sqlite", tablename=table, autocommit=True) as db:
             db[self.current_time] = data
 
     def exchange_execution(self):
+        """
+        Execute the exchange.
+        """
         self.exchange.load_market(self.latest_orderbook)
         self.exchange.load_trade(self.mm_orderbook)
         self.exchange.update_time(self.current_time)
@@ -95,6 +158,9 @@ class Agent:
         self.record_all_orders()
 
     def record_matched_orders(self):
+        """
+        Record the matched orders.
+        """
         for i in self.matched_orders:
             self.matched_orders_record["Time"].append(i["Time"])
             self.matched_orders_record["Matched Price"].append(i["Matched Price"])
@@ -103,6 +169,9 @@ class Agent:
             self.matched_orders_record["Seller"].append(i["Seller"])
 
     def record_all_orders(self):
+        """
+        Record all the orders.
+        """
         for i in self.all_orders_updated:
             i = i.__dict__()
             self.all_orders_record["order_id"].append(i["order_id"])
@@ -116,19 +185,31 @@ class Agent:
             self.all_orders_record["status"].append(i["status"])
 
     def matched_to_csv(self):
+        """
+        Write the matched orders to a CSV file.
+        """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.matched_orders_record.items() })
         df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\matched_orders.csv")
 
     def allorders_to_csv(self):
+        """
+        Write all the orders to a CSV file.
+        """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.all_orders_record.items() })
         df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\all_orders.csv")
 
     def send_book(self):
+        """
+        Send the order book to the market maker.
+        """
         self.mm_orderbook = []
         self.mm1.general_update(self.matched_orders, self.tickers, self.current_time)
         self.mm_orderbook.extend(self.mm1.trading_strategy(self.current_time, self.latest_orderbook, 1))
 
     def record_allplayers(self):
+        """
+        Record all the players if the current time is greater than or equal to the number of rounds.
+        """
         if self.current_time >= self.num_rounds:
             playersIC = {}
             playersIC["mm1_inventory"] = self.mm1.inventory_history
@@ -139,18 +220,3 @@ class Agent:
             df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
             self.matched_to_csv()
             self.allorders_to_csv()
-
-
-'''
-    def proxy_price(self, price_history):
-        """To prevent price to be zero when there's no order"""
-        if len(price_history) == 0:
-            return 0
-        if price_history[-1] == 0:
-            if len(price_history) == 1:
-                return 0
-            else:
-                return self.proxy_price(price_history[:len(price_history) - 1])
-        else:
-            return price_history[-1]
-'''

@@ -5,7 +5,7 @@ def main():
     number_of_mm = 1
     real_mkt = False
     total_rounds = 1000
-    num_of_test = 50
+    num_of_test = 30
     mm_return = []
     p1_return = []
     p3_return = []
