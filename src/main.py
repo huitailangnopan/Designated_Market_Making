@@ -26,11 +26,11 @@ def main():
 
     # Main trading simulation loop
     for round in range(total_rounds):
-        trading_agent.update_markettradebook()
-        trading_agent.update_price()
         trading_agent.send_book()
+        trading_agent.update_markettradebook()
         trading_agent.mmtrade_submit()
         trading_agent.exchange_execution()
+        trading_agent.update_price()
         trading_agent.record_allplayers()
         trading_agent.run_next_round()
     print("program finished")

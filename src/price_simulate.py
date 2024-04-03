@@ -20,8 +20,10 @@ class PriceSimulator:
         self.market = bm.Brownian(volatility=self.volatility, steps=self.steps, num=self.num_sim, p_start=self.p_start)
         self.orderbook = []
         self.orderbook_returnedbyexhcange = []
+        self.unsettled_orders = []
         self.matched_orders = []
         self.p1 = Participant1()
+        self.p2 = Participant2()
         self.p3 = Participant3()
 
     def load_market(self, MarketPath):
@@ -41,8 +43,9 @@ class PriceSimulator:
         else:
             self.orderbook.append(order)
 
-    def updatedOrderbookfromExchange(self, matched_orders):
+    def updatedOrderbookfromExchange(self, matched_orders,unsettled_orders):
         self.orderbook_returnedbyexhcange = matched_orders
+        self.unsettled_orders = unsettled_orders
 
     def get_newest_orderbook(self, real_mkt=False, asset='IBM'):
         self.asset = asset
@@ -64,13 +67,13 @@ class PriceSimulator:
                 # p_order = poisson.pmf(k=1, mu=0.7)
                 # if random.uniform(0, 1) >= p_order:
                 ask_price = round(price + spread / 2, 1)
-                ask_quantity = random.randint(1, 5)
+                ask_quantity = random.randint(1, 10)
                 self.updatebook(self.generate_marketorder('SELL', ask_price, ask_quantity))
             for i in range(random.randint(0, 5)):
                 price = self.market[0][self.timestamp]
                 spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
                 bid_price = round(price - spread / 2, 1)
-                bid_quantity = random.randint(1, 5)
+                bid_quantity = random.randint(1, 10)
                 self.updatebook(self.generate_marketorder('BUY', bid_price, bid_quantity))
         self.get_order_marketparticipants()
         return self.orderbook
@@ -85,6 +88,8 @@ class PriceSimulator:
         self.p1.update_time(self.timestamp)
         self.p1.update_tickers(self.asset)
         self.p1.eagleeye(self.market[0])
+        self.p2.update_time(self.timestamp)
+        self.p2.update_tickers(self.asset)
         self.p3.update_time(self.timestamp)
         self.p3.update_tickers(self.asset)
         self.p3.eagleeye(self.market[0])
@@ -92,8 +97,10 @@ class PriceSimulator:
     def get_order_marketparticipants(self):
         self.init_participants()
         self.p1.receive_feedback(self.orderbook_returnedbyexhcange, -1)
+        self.p2.receive_feedback(self.orderbook_returnedbyexhcange, self.unsettled_orders)
         self.p3.receive_feedback(self.orderbook_returnedbyexhcange, -3)
         self.updatebook(self.p1.trading_strategy())
+        self.updatebook(self.p2.trading_strategy())
         self.updatebook(self.p3.trading_strategy())
 
     def record_participants(self):

@@ -50,15 +50,63 @@ class exchange:
         """
         self.mm_orderbook = mm_orderbook
 
-    def exchange_execute(self):
-        """
-        Execute the exchange by matching the orders in the market order book and trade order book.
 
-        Returns:
-        list: The matched orders and the updated orders.
-        """
-        orders = self.marketorder.copy()
-        orders.extend(self.mm_orderbook)
+    def exchange_execute(self):
+        orders = self.mm_orderbook.copy()
+        orders.extend(self.marketorder)
+        matched = []
+        buy_orders = [order for order in orders if order.getordertype() == 'BUY' and order.getstatus() != 'EXECUTED']
+        sell_orders = [order for order in orders if order.getordertype() == 'SELL' and order.getstatus() != 'EXECUTED']
+        matches_found = True
+
+        while matches_found:
+            matches_found = False  # Assume no matches at the start of each iteration
+            for buy_order in buy_orders:
+                for sell_order in sell_orders:
+                    if buy_order.getstatus() == 'EXECUTED' or sell_order.getstatus() == 'EXECUTED':
+                        continue  # Skip already executed orders
+
+                    if buy_order.getasset() == sell_order.getasset() and buy_order.getorderprice() >= sell_order.getorderprice():
+                        # Determine matched quantity and price
+                        matched_quantity = min(buy_order.getorderquantity(), sell_order.getorderquantity())
+                        matched_price = min(buy_order.getorderprice(), sell_order.getorderprice())
+
+                        # Update orders based on the matched quantity
+                        buy_order.order_quantity -= matched_quantity
+                        sell_order.order_quantity -= matched_quantity
+
+                        if buy_order.getorderquantity() == 0:
+                            buy_order.setstatus('EXECUTED')
+                        if sell_order.getorderquantity() == 0:
+                            sell_order.setstatus('EXECUTED')
+
+                        # Record the match
+                        matched.append({
+                            "Time": self.current_time,
+                            "Matched Price": matched_price,
+                            "Matched Quantity": matched_quantity,
+                            "Buyer": buy_order.getcustomerid(),
+                            "Seller": sell_order.getcustomerid()
+                        })
+
+                        print(f"Time: {self.current_time}, Matched Price: {matched_price}, "
+                              f"Quantity: {matched_quantity}, Buyer: {buy_order.getcustomerid()}, "
+                              f"Seller: {sell_order.getcustomerid()}")
+
+                        matches_found = True  # Indicate that a match was found in this iteration
+
+                        if buy_order.getstatus() == 'EXECUTED' or sell_order.getstatus() == 'EXECUTED':
+                            break  # Move on to the next buy order if one of the orders was fully executed
+
+                # Refresh the lists to remove executed orders for the next iteration
+                buy_orders = [order for order in buy_orders if order.getstatus() != 'EXECUTED']
+                sell_orders = [order for order in sell_orders if order.getstatus() != 'EXECUTED']
+        return matched,orders
+
+"""
+    def exchange_execute(self):
+        orders = self.mm_orderbook.copy()
+        orders.extend(self.marketorder)
         matched = []
         for order in orders:
             if order.getstatus() == 'EXECUTED':
@@ -66,6 +114,8 @@ class exchange:
             for match_order in orders:
                 if match_order.getstatus() == 'EXECUTED':
                     continue
+                if order.getstatus() == 'EXECUTED':
+                    break
                 if order.getasset() == match_order.getasset() and order.getordertype() != match_order.getordertype():
                     if (order.getordertype() == 'BUY' and order.getorderprice() >= match_order.getorderprice()) or \
                        (order.getordertype() == 'SELL' and order.getorderprice() <= match_order.getorderprice()):
@@ -119,7 +169,7 @@ class exchange:
         return matched,orders
 
 
-
+"""
 
 
     

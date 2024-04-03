@@ -1,3 +1,5 @@
+import random
+
 import pandas as pd
 import numpy as np
 from src.price_simulate import PriceSimulator
@@ -29,12 +31,23 @@ class Agent:
         self.exchange = exchange()
         self.mm_orderbook = []
         self.matched_orders = []
+        self.all_orders_updated = []
+        self.unsettled_orders = []
+        self.playersIC = {}
         self.matched_orders_record = {"Time":[],"Matched Price":[],"Matched Quantity":[],"Buyer":[],"Seller":[]}
         self.all_orders_record = {"order_id":[],"customer_id":[],"order_time":[],
                                   "asset":[],"order_type":[],"order_price":[],"order_quantity":[],"total_amount":[],"status":[]}
-        self.all_orders_updated = []
-        self.mm1 = marketmarker()
+        self.liquidity = {"qs":[],"DB":[]}
+        self.mm_list = []
+        self.initialize_mm()
+        self.mm1 = marketmarker(1)
 
+    def initialize_mm(self):
+        """
+        Initialize list of market maker.
+        """
+        for i in range(1,self.num_mm+1):
+            self.mm_list.append(marketmarker(i))
     def initialize_record(self):
         """
         Initialize the database tables for the agent.
@@ -48,7 +61,7 @@ class Agent:
         Run the next round of trading.
         """
         self.latest_orderbook = []
-        self.price_bot.updatedOrderbookfromExchange(self.matched_orders)
+        self.price_bot.updatedOrderbookfromExchange(self.matched_orders,self.unsettled_orders)
         self.latest_orderbook.extend(self.price_bot.get_newest_orderbook(real_mkt=self.real_mkt))
         self.current_time = self.price_bot.timestamp
 
@@ -65,10 +78,11 @@ class Agent:
         """
         Update the price based on the latest order book.
         """
-        order_book = self.latest_orderbook
+        order_book = self.unsettled_orders
         price = self.calculate_price(order_book)
         self.update_db("price_his", price)
         self.price_history.append(price)
+        return price
 
     def calculate_price(self, order_book):
         """
@@ -146,17 +160,79 @@ class Agent:
         with SqliteDict("exchange.sqlite", tablename=table, autocommit=True) as db:
             db[self.current_time] = data
 
+    def extract_unsettled_orders(self):
+        """
+        Extract the unsettled orders from the market trade book after the exchange.
+        """
+        self.unsettled_orders = []
+        for i in self.all_orders_updated:
+            if i.status == "PENDING":
+                self.unsettled_orders.append(i)
+
     def exchange_execution(self):
         """
         Execute the exchange.
         """
-        self.exchange.load_market(self.latest_orderbook)
         self.exchange.load_trade(self.mm_orderbook)
+        self.exchange.load_market(self.latest_orderbook)
         self.exchange.update_time(self.current_time)
         self.matched_orders, self.all_orders_updated = self.exchange.exchange_execute()
+        self.extract_unsettled_orders()
+        self.liquidity_analysis()
+        self.record_playerIC()
         self.record_matched_orders()
         self.record_all_orders()
 
+    def liquidity_analysis(self):
+        """
+        Analyze the liquidity.
+        """
+        mt = self.update_price()
+        # Filter the unsettled orders to only include 'SELL' orders
+        sell_orders = [order for order in self.unsettled_orders if order.getordertype() == 'SELL']
+
+        # Use the min function with a key argument to find the order with the minimum price
+        min_sell_order = min(sell_orders, key=lambda order: order.getorderprice(), default=None)
+
+        # Get the quantity of that order
+        if min_sell_order is not None:
+            min_sell_order_quantity = min_sell_order.getorderquantity()
+            min_sell_order_price = min_sell_order.getorderprice()
+        else:
+            min_sell_order_quantity = 0
+            min_sell_order_price = 0
+
+        # Filter the unsettled orders to only include 'BUY' orders
+        buy_orders = [order for order in self.unsettled_orders if order.getordertype() == 'BUY']
+
+        # Use the max function with a key argument to find the order with the maximum price
+        max_buy_order = max(buy_orders, key=lambda order: order.getorderprice(), default=None)
+
+        # Get the quantity of that order
+        if max_buy_order is not None:
+            max_buy_order_quantity = max_buy_order.getorderquantity()
+            max_buy_order_price = max_buy_order.getorderprice()
+        else:
+            max_buy_order_quantity = 0
+            max_buy_order_price = 0
+
+        if max_buy_order_price*min_sell_order_price != 0:
+            qs = (min_sell_order_price - max_buy_order_price) / mt
+        else:
+            qs = 0
+        DB = min_sell_order_quantity + max_buy_order_quantity
+        self.liquidity["qs"].append(qs)
+        self.liquidity["DB"].append(DB)
+
+
+
+    def record_playerIC(self):
+        for i in range(1, self.num_mm + 1):
+            self.playersIC["mm" + str(i) + "_inventory"] = self.mm_list[i - 1].inventory_history
+            self.playersIC["mm" + str(i) + "_cash"] = self.mm_list[i - 1].cash_history
+        self.playersIC["p1_inventory"], self.playersIC["p1_cash"], self.playersIC["p3_inventory"], self.playersIC[
+            "p3_cash"] = self.price_bot.record_participants()
+        self.playersIC["price_history"] = self.price_history
     def record_matched_orders(self):
         """
         Record the matched orders.
@@ -184,6 +260,13 @@ class Agent:
             self.all_orders_record["total_amount"].append(i["total_amount"])
             self.all_orders_record["status"].append(i["status"])
 
+    def playerIC_to_csv(self):
+        """
+        Write the player IC to a CSV file.
+        """
+        df = pd.DataFrame({ key:pd.Series(value) for key, value in self.playersIC.items() })
+        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
+
     def matched_to_csv(self):
         """
         Write the matched orders to a CSV file.
@@ -198,25 +281,29 @@ class Agent:
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.all_orders_record.items() })
         df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\all_orders.csv")
 
+    def liquidity_to_csv(self):
+        """
+        Write the liquidity to a CSV file.
+        """
+        df = pd.DataFrame({ key:pd.Series(value) for key, value in self.liquidity.items() })
+        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\liquidity.csv")
+
     def send_book(self):
         """
         Send the order book to the market maker.
         """
         self.mm_orderbook = []
-        self.mm1.general_update(self.matched_orders, self.tickers, self.current_time)
-        self.mm_orderbook.extend(self.mm1.trading_strategy(self.current_time, self.latest_orderbook, 1))
+        for i in self.mm_list:
+            i.general_update(self.matched_orders, self.unsettled_orders, self.tickers, self.current_time)
+            self.mm_orderbook.extend(i.trading_strategy())
+        random.shuffle(self.mm_orderbook)
 
     def record_allplayers(self):
         """
         Record all the players if the current time is greater than or equal to the number of rounds.
         """
         if self.current_time >= self.num_rounds:
-            playersIC = {}
-            playersIC["mm1_inventory"] = self.mm1.inventory_history
-            playersIC["mm1_cash"] = self.mm1.cash_history
-            playersIC["p1_inventory"], playersIC["p1_cash"], playersIC["p3_inventory"], playersIC["p3_cash"] = self.price_bot.record_participants()
-            playersIC["price_history"] = self.price_history
-            df = pd.DataFrame({ key:pd.Series(value) for key, value in playersIC.items() })
-            df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
+            self.playerIC_to_csv()
             self.matched_to_csv()
             self.allorders_to_csv()
+            self.liquidity_to_csv()
