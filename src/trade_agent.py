@@ -9,7 +9,7 @@ from src.exchange import exchange
 
 
 class Agent:
-    def __init__(self, tickers, num_mm, real_mkt, num_rounds):
+    def __init__(self, tickers, num_mm, real_mkt, num_rounds, rebate_rate):
         """
         Initialize the Agent class with the given parameters.
 
@@ -39,15 +39,26 @@ class Agent:
                                   "asset":[],"order_type":[],"order_price":[],"order_quantity":[],"total_amount":[],"status":[]}
         self.liquidity = {"qs":[],"DB":[]}
         self.mm_list = []
-        self.initialize_mm()
-        self.mm1 = marketmarker(1)
+        self.initialize_mm(rebate_rate)
 
-    def initialize_mm(self):
+    def update_directories(self, path):
+        """
+        Update the directories with the given path.
+
+        Parameters:
+        path (str): The path to update the directories with.
+        """
+        self.playerIC_path = f"{path}\\playersIC.csv"
+        self.matched_orders_path = f"{path}\\matched_orders.csv"
+        self.all_orders_path = f"{path}\\all_orders.csv"
+        self.liquidity_path = f"{path}\\liquidity.csv"
+
+    def initialize_mm(self,rebate_rate):
         """
         Initialize list of market maker.
         """
         for i in range(1,self.num_mm+1):
-            self.mm_list.append(marketmarker(i))
+            self.mm_list.append(marketmarker(i,rebate_rate))
     def initialize_record(self):
         """
         Initialize the database tables for the agent.
@@ -233,6 +244,7 @@ class Agent:
         self.playersIC["p1_inventory"], self.playersIC["p1_cash"], self.playersIC["p3_inventory"], self.playersIC[
             "p3_cash"] = self.price_bot.record_participants()
         self.playersIC["price_history"] = self.price_history
+        self.playersIC["fundamental_price"] = self.price_bot.get_fundamental_value()[:self.num_rounds]
     def record_matched_orders(self):
         """
         Record the matched orders.
@@ -265,28 +277,28 @@ class Agent:
         Write the player IC to a CSV file.
         """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.playersIC.items() })
-        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\playersIC.csv")
+        df.to_csv(self.playerIC_path)
 
     def matched_to_csv(self):
         """
         Write the matched orders to a CSV file.
         """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.matched_orders_record.items() })
-        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\matched_orders.csv")
+        df.to_csv(self.matched_orders_path)
 
     def allorders_to_csv(self):
         """
         Write all the orders to a CSV file.
         """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.all_orders_record.items() })
-        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\all_orders.csv")
+        df.to_csv(self.all_orders_path)
 
     def liquidity_to_csv(self):
         """
         Write the liquidity to a CSV file.
         """
         df = pd.DataFrame({ key:pd.Series(value) for key, value in self.liquidity.items() })
-        df.to_csv(r"C:\Users\24395\Designated_Market_Making\output\liquidity.csv")
+        df.to_csv(self.liquidity_path)
 
     def send_book(self):
         """

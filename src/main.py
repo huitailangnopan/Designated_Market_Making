@@ -22,7 +22,7 @@ def main():
 
 
     # Initialize the trading agent
-    trading_agent = Agent(tickers=stock_symbol, num_mm= number_of_mm,real_mkt=real_mkt, num_rounds=total_rounds)
+    trading_agent = Agent(tickers=stock_symbol, num_mm= number_of_mm,real_mkt=real_mkt, num_rounds=total_rounds,rebate_rate=-0.002)
 
     # Main trading simulation loop
     for round in range(total_rounds):

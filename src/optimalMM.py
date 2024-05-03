@@ -4,7 +4,7 @@ import numpy as np
 
 
 class marketmarker:
-    def __init__(self, ids):
+    def __init__(self, ids, rebaterate=-0.0020):
         """
         Initialize the marketmarker class with default parameters.
         """
@@ -22,7 +22,7 @@ class marketmarker:
         self.cash_history = []
         self.id = ids
         self.mid_price_collecton = []
-        self.rebate_rate = -0.0020
+        self.rebate_rate = rebaterate
 
     def update_time(self, current_time):
         """
@@ -127,6 +127,8 @@ class marketmarker:
             s = mid_price  # Current mid-price
             q = self.inventory/self.max_tolerance  # Dealer's inventory percentage
             sigma_squared = (np.std(self.mid_price_collecton) if len(self.mid_price_collecton)<20 else np.std(self.mid_price_collecton[-20:]))**2  # Volatility squared
+            # sigma_squared = (np.std(self.mid_price_collecton) if len(self.mid_price_collecton) < 20 else np.std(
+            #     self.mid_price_collecton[-20:]))
             pmax = max(self.mid_price_collecton) if len(self.mid_price_collecton)<20 else max(self.mid_price_collecton[-20:])
             pmin = min(self.mid_price_collecton) if len(self.mid_price_collecton)<20 else min(self.mid_price_collecton[-20:])
             target_weight = (pmax - s) / (pmax - pmin) if pmax>pmin else 0.5 # Target weight
@@ -136,14 +138,17 @@ class marketmarker:
             time_horizon = 1
             # Calculate the reservation ask price (r_a)
             r_a = s + (1 - 2 * q) * (sigma_squared / 2) * time_horizon
+            #r_a = s + (1 - 2 * q)
             r_a = r_a * (1 + self.rebate_rate)
             # Calculate the reservation bid price (r_b)
             r_b = s + (-1 - 2 * q) * (sigma_squared / 2) * time_horizon
+            #r_b = s + (-1 - 2 * q)
             r_b = r_b * (1 - self.rebate_rate)
             # Calculate the reservation ask quantity (q_a)
-            q_a = max(I_t + self.inventory,0)/5
+            q_a = max(I_t + self.inventory,1)/5
+
             # Calculate the reservation bid quantity (q_b)
-            q_b = max(I_t - self.inventory,0)/5
+            q_b = max(I_t - self.inventory,1)/5
             #print("s:", s, "r_a: ", r_a, "r_b: ", r_b, "q_a: ", q_a, "q_b: ", q_b,'q:',q,'sigma_squared:',sigma_squared)
             if q_a > 5:
                 for i in range(5):

@@ -25,6 +25,11 @@ class PriceSimulator:
         self.p1 = Participant1()
         self.p2 = Participant2()
         self.p3 = Participant3()
+        self.mid_price = 0
+        self.shock = False
+
+    def get_fundamental_value(self):
+        return self.market[0]
 
     def load_market(self, MarketPath):
         self.marketdf = pd.read_csv(MarketPath, nrows=10000)
@@ -50,6 +55,25 @@ class PriceSimulator:
     def get_newest_orderbook(self, real_mkt=False, asset='IBM'):
         self.asset = asset
         self.next_time()
+        latest_orderbook = self.unsettled_orders
+        orderbook = {}
+        orderbook["ask_prices"] = []
+        orderbook["bid_prices"] = []
+        orderbook["ask_quantity"] = []
+        orderbook['bid_quantity'] = []
+        for i in latest_orderbook:
+            if i.getordertype() == "SELL" and i.getcustomerid() <= 0:
+                orderbook["ask_prices"].append(i.getorderprice())
+                orderbook["ask_quantity"].append(i.getorderquantity())
+            if i.getordertype() == "BUY" and i.getcustomerid() <= 0:
+                orderbook["bid_prices"].append(i.getorderprice())
+                orderbook["bid_quantity"].append(i.getorderquantity())
+        if sum(orderbook['ask_quantity']) + sum(orderbook['bid_quantity']) != 0:
+            mid_price = (np.dot(orderbook["bid_prices"], orderbook["bid_quantity"]) + np.dot(orderbook["ask_prices"], orderbook["ask_quantity"])) / (sum(orderbook['ask_quantity']) + sum(orderbook['bid_quantity']))
+            mid_price = round(mid_price, 2)
+        else:
+            mid_price = 0
+        self.mid_price = mid_price
         if real_mkt:
             temp = self.marketdf.iloc[self.timestamp:self.timestamp + 1]
             ask_price = round(float(temp.iloc[0, 4]), 2)
@@ -61,20 +85,26 @@ class PriceSimulator:
             self.updatebook(buy_order)
             self.updatebook(sell_order)
         else:
-            for i in range(random.randint(0, 5)):
-                price = self.market[0][self.timestamp]
-                spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
-                # p_order = poisson.pmf(k=1, mu=0.7)
-                # if random.uniform(0, 1) >= p_order:
-                ask_price = round(price + spread / 2, 1)
-                ask_quantity = random.randint(1, 10)
-                self.updatebook(self.generate_marketorder('SELL', ask_price, ask_quantity))
-            for i in range(random.randint(0, 5)):
-                price = self.market[0][self.timestamp]
-                spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
-                bid_price = round(price - spread / 2, 1)
-                bid_quantity = random.randint(1, 10)
-                self.updatebook(self.generate_marketorder('BUY', bid_price, bid_quantity))
+            if self.shock:
+                if self.timestamp == 500:
+                    y = [k*1.3 for k in self.market[0][500:]]
+                    self.market[0][500:] = y
+            if self.market[0][self.timestamp] < mid_price*1.1:
+                for i in range(random.randint(0, 5)):
+                    price = self.market[0][self.timestamp]
+                    spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
+                    # p_order = poisson.pmf(k=1, mu=0.7)
+                    # if random.uniform(0, 1) >= p_order:
+                    ask_price = min(round(price + spread / 2, 1), round(mid_price * 1.03, 2)) if mid_price != 0 else round(price + spread / 2, 1)
+                    ask_quantity = random.randint(1, 10)
+                    self.updatebook(self.generate_marketorder('SELL', ask_price, ask_quantity))
+            if self.market[0][self.timestamp] > mid_price*0.9:
+                for i in range(random.randint(0, 5)):
+                    price = self.market[0][self.timestamp]
+                    spread = s = np.random.lognormal(-1.6, 0.5, 20)[0]
+                    bid_price = min(round(price - spread / 2, 1), round(mid_price * 1.02, 2)) if mid_price != 0 else round(price + spread / 2, 1)
+                    bid_quantity = random.randint(1, 10)
+                    self.updatebook(self.generate_marketorder('BUY', bid_price, bid_quantity))
         self.get_order_marketparticipants()
         return self.orderbook
 
@@ -88,11 +118,14 @@ class PriceSimulator:
         self.p1.update_time(self.timestamp)
         self.p1.update_tickers(self.asset)
         self.p1.eagleeye(self.market[0])
+        self.p1.update_midprice(self.mid_price)
         self.p2.update_time(self.timestamp)
         self.p2.update_tickers(self.asset)
+        self.p2.update_midprice(self.mid_price)
         self.p3.update_time(self.timestamp)
         self.p3.update_tickers(self.asset)
         self.p3.eagleeye(self.market[0])
+        self.p3.update_midprice(self.mid_price)
 
     def get_order_marketparticipants(self):
         self.init_participants()

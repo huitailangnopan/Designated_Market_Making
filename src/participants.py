@@ -15,12 +15,17 @@ class Participant1:
         self.max_tolerance = 25
         self.cash = 100
         self.cash_history = []
+        self.midprice_list = []
+        self.midprice = 0
 
     def update_time(self, current_time):
         self.current_time = current_time
 
     def update_tickers(self, tickers):
         self.tickers = tickers
+
+    def update_midprice(self, midprice):
+        self.midprice = midprice
 
     def receive_feedback(self, feedback, id):
         self.update_inventory(feedback, id)
@@ -32,17 +37,21 @@ class Participant1:
         self.orders = []
         if self.current_time == 0:
             return self.orders
+        if self.midprice != 0:
+            self.midprice_list.append(self.midprice)
+        # if len(self.midprice_list) >= 1:
+        #     self.future_price[self.current_time - 1] = self.midprice_list[-1]
         five_steps_later = self.future_price[self.current_time + 4]
         profit_margin = abs(five_steps_later - self.future_price[self.current_time - 1])
         if five_steps_later > self.future_price[self.current_time - 1]:
-            bid_price = round(self.future_price[self.current_time - 1] + 0.05 * profit_margin, 2)
+            bid_price = min(round(self.future_price[self.current_time - 1] + 0.05 * profit_margin, 2), round(self.midprice * 1.02, 2)) if self.midprice != 0 else round(self.future_price[self.current_time - 1] + 0.05 * profit_margin, 2)
             bid_quantity = min(max(self.max_tolerance - self.inventory, 0),5)
-            if bid_quantity > 0:
+            if bid_quantity > 0 and five_steps_later > self.midprice * 0.9:
                 self.orders.append(self.generate_marketorder(-1, 'BUY', bid_price, bid_quantity))
         else:
-            ask_price = round(self.future_price[self.current_time - 1] - 0.05 * profit_margin, 2)
+            ask_price = min(round(self.future_price[self.current_time - 1] - 0.05 * profit_margin, 2), round(self.midprice * 1.03, 2)) if self.midprice != 0 else round(self.future_price[self.current_time - 1] - 0.05 * profit_margin, 2)
             ask_quantity = min(max(self.max_tolerance + self.inventory, 0),5)
-            if ask_quantity > 0:
+            if ask_quantity > 0 and five_steps_later < self.midprice * 1.1:
                 self.orders.append(self.generate_marketorder(-1, 'SELL', ask_price, ask_quantity))
         self.prev_order = self.orders
         return self.orders
@@ -84,9 +93,13 @@ class Participant2:
         self.cash_history = []
         self.matched_trades = []
         self.unsettled_orders = []
+        self.midprice = 0
 
     def update_time(self, current_time):
         self.current_time = current_time
+
+    def update_midprice(self, midprice):
+        self.midprice = midprice
 
     def update_tickers(self, tickers):
         self.tickers = tickers
@@ -144,12 +157,17 @@ class Participant3:
         self.max_tolerance = 50
         self.cash = 100
         self.cash_history = []
+        self.midprice_list = []
+        self.midprice = 0
 
     def update_time(self, current_time):
         self.current_time = current_time
 
     def update_tickers(self, tickers):
         self.tickers = tickers
+
+    def update_midprice(self, midprice):
+        self.midprice = midprice
 
     def receive_feedback(self, feedback, id):
         self.update_inventory(feedback, id)
@@ -162,17 +180,21 @@ class Participant3:
         if self.current_time in (0, 1):
             return self.orders
         else:
+            if self.midprice != 0:
+                self.midprice_list.append(self.midprice)
+            # if len(self.midprice_list) >= 1:
+            #     self.prev_price[self.current_time - 2] = self.midprice_list[-1]
             expected_growth = self.prev_price[self.current_time - 1] - self.prev_price[self.current_time - 2]
             profit_margin = abs(self.prev_price[self.current_time - 1] - self.prev_price[self.current_time - 2])
             if expected_growth > 0:
-                bid_price = round(self.prev_price[self.current_time - 1] + 0.05 * profit_margin, 2)
+                bid_price = min(round(self.prev_price[self.current_time - 1] + 0.05 * profit_margin, 2), round(self.midprice * 1.02, 2)) if self.midprice != 0 else round(self.prev_price[self.current_time - 1] + 0.05 * profit_margin, 2)
                 bid_quantity = min(max(self.max_tolerance - self.inventory, 0), 10)
-                if bid_quantity > 0:
+                if bid_quantity > 0 and self.prev_price[self.current_time - 1] > self.midprice * 0.9:
                     self.orders.append(self.generate_marketorder(-3, 'BUY', bid_price, bid_quantity))
             else:
-                ask_price = round(self.prev_price[self.current_time - 1] - 0.05 * profit_margin, 2)
+                ask_price = min(round(self.prev_price[self.current_time - 1] - 0.05 * profit_margin, 2), round(self.midprice * 1.03, 2)) if self.midprice != 0 else round(self.prev_price[self.current_time - 1] - 0.05 * profit_margin, 2)
                 ask_quantity = min(max(self.max_tolerance + self.inventory, 0), 10)
-                if ask_quantity > 0:
+                if ask_quantity > 0 and self.prev_price[self.current_time - 1] < self.midprice * 1.1:
                     self.orders.append(self.generate_marketorder(-3, 'SELL', ask_price, ask_quantity))
             self.prev_order = self.orders
         return self.orders
